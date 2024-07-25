@@ -1,0 +1,203 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* variables */
+:root {
+    --color-black: black;
+    --color-grey: rgb(52, 52, 52);
+    --color-orange: rgb(227 82 59);
+    --color-paragraph: rgb(199, 199, 199);
+    --color-heading: black;
+  }
+body{
+    width: 100%;
+    
+
+}
+
+/* shared styles */
+.btn_primary{
+    background: var(--color-orange);
+    color: white;
+    border-radius: 25px;
+    padding: 7px 18px;
+    border:1px solid var(--color-orange);
+    font-size: 1.2rem;
+}
+h1,h2,h3,h4{
+    color: white;
+}
+p{
+    color: var(--color-paragraph);
+    font-size: 1.3rem;
+}
+.section_title{
+    font-size: 4rem;
+}
+
+header{
+    background: var(--color-black);
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.logo{
+    color:var(--color-orange);
+    font-size: 3rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border: 2px solid var(--color-grey);
+    border-radius: 25px;
+    padding: 2px 15px 2px 2px;
+}
+.menu>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+/* hero section */
+.hero{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 15px;
+    backgroundr: var(--color-black);
+    width: 75%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.hero_content{
+    width: 45%;
+}
+.hero_title{
+    font-size: 5rem;
+    margin: 15px 0;
+}
+.join_btn{
+    margin: 20px 20px 20px 0;
+    padding: 13px 35px;
+    border-radius: 40px;
+}
+.download_btn{
+    background-color: var(--color-black);
+    border: 2px solid white;
+    padding: 13px 35px;
+    border-radius: 40px;
+}
+
+.hero_img{
+    position: relative;
+    width: 35%;
+    
+}
+.hero_img> img{
+    width: 100%;
+}
+.five_hundred{
+    position: absolute;
+    top: 9rem;
+    right: 0;
+    background: rgb(255, 255,255, .2) ;
+    padding: 15px;
+    border-radius: 8px;
+}
+.three_fifty{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 7rem;
+    left: 0;
+    background: rgb(255, 255,255, .2) ;
+    padding: 15px;
+    border-radius: 8px;
+
+}
+.red_circle{
+    background-color: var(--color-orange);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+/* main  */
+main{
+    background-color: var(--color-black);
+}
+.change_your_habits{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+.change_your_habits_cards{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.change_your_habits_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+
+}
+.change_your_habits_card > img{
+    border-radius: 50%;
+    margin: 1rem;
+}
+.run_extra{
+    background-color: var(--color-grey);
+    padding:1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 3rem auto;
+    border-radius: 12px;
+}
+.run_extra_content{
+    width: 45%;
+}
+.run{
+    width: 40%;
+}
+.run > img{
+    width: 100%;
+    border-radius: 12px;
+}
+.training{
+    width: 75%;
+    margin: 3rem auto;
+}
+.photo_gallery{
+    display: grid;
+    grid-template-columns: repeat(3fr);
+}
+.photo_gallery > img{
+    width: 100%;
+}
+.blue{
+    background-image: url(../images/exercise1.jpg);
+    background-color: rgba(127, 255, 212, 0.442);
+    background-blend-mode:overlay;
+}
