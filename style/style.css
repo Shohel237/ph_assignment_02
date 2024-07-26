@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@font-face {
+    font-family: Miama;
+    src: url(../fonts/Miama.ttf);
+}
 
 *{
     box-sizing: border-box;
@@ -8,16 +13,18 @@
 /* variables */
 :root {
     --color-black: black;
-    --color-grey: rgb(52, 52, 52);
-    --color-orange: rgb(227 82 59);
-    --color-paragraph: rgb(199, 199, 199);
+    --color-grey: rgb(34, 34, 34);
+    --color-orange: rgb(230, 83, 60);
+    --color-paragraph: rgba(255, 255, 255, 0.5);
     --color-heading: black;
   }
 body{
     width: 100%;
+    font-family: "Inter", sans-serif;
     
 
 }
+
 
 /* shared styles */
 .btn_primary{
@@ -33,14 +40,14 @@ h1,h2,h3,h4{
 }
 p{
     color: var(--color-paragraph);
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .section_title{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 header{
-    background: var(--color-black);
+    background: linear-gradient(rgb(0, 0, 0),rgba(30, 30, 30, 0.903), rgb(0, 0, 0) 100%);
 }
 /* navbar */
 nav{
@@ -53,13 +60,13 @@ nav{
 }
 .logo{
     color:var(--color-orange);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .menu{
     display: flex;
     align-items: center;
     gap: 3rem;
-    border: 2px solid var(--color-grey);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 25px;
     padding: 2px 15px 2px 2px;
 }
@@ -74,7 +81,6 @@ nav{
     justify-content:space-between;
     align-items: center;
     gap: 15px;
-    backgroundr: var(--color-black);
     width: 75%;
     margin: 0 auto;
     padding: 3rem 0;
@@ -86,15 +92,21 @@ nav{
     font-size: 5rem;
     margin: 15px 0;
 }
+span{
+    font-family: Miama;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: 08rem;
+}
 .join_btn{
     margin: 20px 20px 20px 0;
-    padding: 13px 35px;
+    padding: 1rem 2.5rem;
     border-radius: 40px;
 }
 .download_btn{
     background-color: var(--color-black);
     border: 2px solid white;
-    padding: 13px 35px;
+    padding: 1rem 2.5rem;
     border-radius: 40px;
 }
 
@@ -108,22 +120,26 @@ nav{
 }
 .five_hundred{
     position: absolute;
-    top: 9rem;
-    right: 0;
-    background: rgb(255, 255,255, .2) ;
+    top: 7rem;
+    right:-7rem;
+    background:  rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(20px);
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 12px;
+    font-size: 2.5rem;
 }
 .three_fifty{
     display: flex;
     align-items: center;
     gap: 1rem;
     position: absolute;
-    bottom: 7rem;
-    left: 0;
-    background: rgb(255, 255,255, .2) ;
+    bottom: 5rem;
+    left: -12rem;
+    background:  rgba(48, 48, 48, 0.54);
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 12px;
+    font-size: 2.5rem;
+    backdrop-filter: blur(20px);
 
 }
 .red_circle{
@@ -173,31 +189,149 @@ main{
     align-items: center;
     width: 75%;
     margin: 3rem auto;
-    border-radius: 12px;
+    border-radius: 18px;
 }
 .run_extra_content{
     width: 45%;
 }
 .run{
-    width: 40%;
+    position: relative;
+    width: 366px;
+    height: 312px;
+    overflow: hidden;
+    border-radius: 18px;
 }
 .run > img{
-    width: 100%;
     border-radius: 12px;
+    position: absolute;
+    left: -29rem;
+    top: -8rem;
+    width: 65rem;
 }
 .training{
     width: 75%;
     margin: 3rem auto;
 }
 .photo_gallery{
-    display: grid;
-    grid-template-columns: repeat(3fr);
+    margin: 3.5rem auto;
 }
-.photo_gallery > img{
-    width: 100%;
+
+.row{
+    display: flex;
 }
+
 .blue{
-    background-image: url(../images/exercise1.jpg);
-    background-color: rgba(127, 255, 212, 0.442);
-    background-blend-mode:overlay;
+    width: 25vw;
+    height: 27vh;
+    background: url(../images/exercise1.jpg), rgba(6, 255, 210, 0.5);
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-position: center;
 }
+.redish{
+    width: 50vw;
+    height: 27vh;
+    background: url(../images/exercise2.png),rgba(255, 0, 0, 0.3);
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-position: center;
+}
+.greyish{
+    width: 25vw;
+    height: 27vh;
+    background: url(../images/exercise3.png),rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-position: center;
+}
+.blackish{
+    width: 37.5vw;
+    height: 27vh;
+    background: url(../images/exercise4.png ),rgba(255, 0, 0, 0.5);
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-position: center;
+}
+.greenish{
+    width: 25vw;
+    height: 27vh;
+    background: url(../images/exercise5.jpg),rgba(66, 255, 0, 0.3);
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-position: center;
+}
+.coolish{
+    width: 37.5vw;
+    height: 27vh;
+    background: url(../images/exercise6.jpg),rgba(0, 71, 255, 0.3);
+    background-size: cover;
+    background-blend-mode:multiply; 
+    background-position: center;
+}
+.bmi_calculator{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bmi_heading{
+    margin-bottom: 4rem;
+}
+.bmi_content_bg{
+    background: var(--color-grey);
+    width: 100vw;
+}
+.bmi_content{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    margin: 4rem 0;
+}
+.bmi_calc>p{
+    margin: 2rem 0;
+}
+
+th{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 80px;
+    border-collapse: collapse;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-collapse: collapse;
+}
+.bmi_calc{
+    width: 45%;
+    margin-bottom: 3rem;
+
+}
+
+.bmi_input{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+input,select{
+    height: 2rem;
+    width: calc(50%-15px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.select_two{
+    width: 100%;
+    color: white;
+    margin-bottom: 20px;
+}
+
