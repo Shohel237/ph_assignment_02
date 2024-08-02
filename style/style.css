@@ -334,4 +334,49 @@ input,select{
     color: white;
     margin-bottom: 20px;
 }
+.meet_our_team{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+.meet_our_team > p{
+    margin: 2.5rem 0;
+}
+.team_members{
+    background: var(--color-grey);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    
+}
+.team_member_card{
+    position: relative;
+    width: 32%;
+    height: 18rem;
+    
+    
+}
+.team_member_card > img{
+    width: 100%;
+    height: 100%; 
+    border-radius: 18px;
+    
+}
+.team_member_card > h4 {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    z-index: 2;
+}
+.team_member_card > p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 
+}
