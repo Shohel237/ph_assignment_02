@@ -410,3 +410,96 @@ footer{
     text-align: center;
     margin: 1rem 0;
 }
+
+/* responsive  */
+
+@media only screen and (max-width: 576px){
+    nav{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu{
+        display:none;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .hero_content{
+        width: 100%;
+    }
+    .hero_title{
+        font-size: 5rem;
+    }
+    span{
+        font-size: 10rem;
+    }
+    .hero_img{
+        width: 60%;
+    }
+    .five_hundred{
+        font-size: 1.5rem;
+    }
+    .three_fifty{
+        font-size: 1.5rem;
+        left: -100px;
+    }
+   .change_your_habits{
+    width: 90%;
+   }
+    
+    .change_your_habits_cards{
+        flex-direction: column;
+        
+    }
+    .change_your_habits_card > h2{
+        margin: 0px;
+        
+    }
+    .bmi_content{
+        flex-direction: column;
+    }
+    .run_extra{
+        flex-direction: column;
+        width: 90%;
+    }
+    .run_extra_content{
+        width: 90%;
+    }
+    .training{
+        width: 90%;
+    }
+    .bmi_calculator{
+        width: 90%;
+    }
+    .bmi_content{
+        width: 90%;
+    }
+    .bmi_calc{
+        width: 100%;
+    }
+    .meet_our_team{
+        width: 90%;
+    }
+    .team_members{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .team_member_card{
+        width: 100%;
+        height: 28rem;
+    }
+    .footer{
+        width: 90%;
+        flex-direction: column;
+    }
+    .footer_card{
+        width: 100%;
+    }
+    .copyright{
+        width: 90%;
+    }
+}
